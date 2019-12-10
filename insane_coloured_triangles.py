@@ -1,5 +1,3 @@
-from array import array
-
 def inc_base3(dig_n, len_n, inc_counter):
     i = 0
     while inc_counter > 0:
@@ -46,10 +44,10 @@ def triangle(row):
     n = len(row)
 
     number = n - 1
-    digits_n = array('b', list(int_base_number(number, 3)))
+    digits_n = list(int_base_number(number, 3))
     len_n = len(digits_n)
 
-    digits_k = array('b', [0] * len_n)
+    digits_k = [0] * len_n
     len_k = 1
 
     i_prev = 0
